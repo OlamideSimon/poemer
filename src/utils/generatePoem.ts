@@ -59,3 +59,54 @@ export const generatePoem = async (
     console.log(error)
   }
 }
+
+export const generatePoemForGirlfriend = async () => {
+  try {
+    const model = genAI.getGenerativeModel({ model: 'gemini-pro' })
+
+    const nameList = ['Aphrodite', 'Queenie', 'Starburst']
+    const herFavoriteColor = 'dark brown'
+    const memorableMoment =
+      'the moment spent together on the first day we met. The day we went for a walk together with her arms in mine.'
+    const sharedInterest =
+      'To get married together and serve Jehovah together. and also to satisfy our fetishes.'
+    const specialQuality =
+      'Her beaA Memorable Moment Togetheruty, her pure heart and her love and care'
+
+    let prompt = `with the use of meaningful emojis, write a poem for my girlfriend, ${
+      nameList[Math.floor(Math.random() * nameList.length)]
+    }.`
+
+    const styles = [
+      'acrostic',
+      'ballad',
+      'elegy',
+      'epic',
+      'free verse',
+      'ghazal',
+      'haiku',
+      'limerick',
+      'ode',
+      'sonnet',
+      'villanelle',
+    ]
+    const randomStyle = styles[Math.floor(Math.random() * styles.length)]
+    prompt += ` Use the ${randomStyle} style.`
+
+    const randomThemes = [
+      `her beautiful ${herFavoriteColor} eyes`,
+      `the way she makes me feel`,
+      `${memorableMoment}`,
+      `${sharedInterest}`,
+      `${specialQuality}`,
+    ]
+    const randomTheme = randomThemes[Math.floor(Math.random() * randomThemes.length)]
+    prompt += ` Explore the theme of ${randomTheme}.`
+
+    const result = await model.generateContent(prompt)
+    const response = result.response
+    return response.text()
+  } catch (error) {
+    console.log(error)
+  }
+}

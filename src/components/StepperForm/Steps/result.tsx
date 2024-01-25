@@ -4,7 +4,7 @@ import { FiRefreshCcw } from 'react-icons/fi'
 import { FaCheck } from 'react-icons/fa6'
 import { useState } from 'react'
 
-const Result = ({ poem, resetStepper }: { poem: string; resetStepper: () => void }) => {
+const Result = ({ poem, resetStepper }: { poem: string; resetStepper?: () => void }) => {
   const [copied, setCopied] = useState(false)
 
   const copyToClipboard = () => {

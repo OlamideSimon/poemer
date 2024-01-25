@@ -30,7 +30,7 @@ const Aphrodite = () => {
         className="min-h-fit min-w-fit max-w-xl bg-white rounded-lg bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-20 border border-gray-100 px-5 py-8"
       >
         {poem && (
-          <div className="text-center">
+          <div className="text-center mb-3">
             <h1 className="text-3xl">
               <span className="text-blue-500">💖🌟🌠Starburst🌠🌟💖</span>
             </h1>

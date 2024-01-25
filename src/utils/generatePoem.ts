@@ -73,7 +73,7 @@ export const generatePoemForGirlfriend = async () => {
     const specialQuality =
       'Her beaA Memorable Moment Togetheruty, her pure heart and her love and care'
 
-    let prompt = `with the use of meaningful emojis, write a poem for my girlfriend, ${
+    let prompt = `with the use of meaningful emojis(optional), write a poem for my girlfriend, ${
       nameList[Math.floor(Math.random() * nameList.length)]
     }.`
 

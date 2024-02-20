@@ -42,9 +42,9 @@ I was intrigued to build this app specifically for my girlfriend because I'm not
 
 - Generating a poem involves completing the stepper form.
 - The Stepper form accepts deta based on your preference so as to allow the gemini model to generate personalised poem for every scenario.
-  ![themes and tones](image.png)
-  ![about](image-1.png)
-  ![styles](image-2.png)
+  ![themes and tones](src/assets/image.png)
+  ![about](src/assets/image-1.png)
+  ![styles](src/assets/image-2.png)
 
 **Contributing:**
 

@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+**Poemer**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Badge: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+**Description:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I was intrigued to build this app specifically for my girlfriend because I'm not so good with writing poems and all. I've read poems written by my friends, directed to the ones they cherish and then I was motivated to create something using Google's Gemini.
 
-## Expanding the ESLint configuration
+**Features:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Create poems crafted specifically for you
 
-- Configure the top-level `parserOptions` property like this:
+**Technologies:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Google gemini](https://ai.google.dev/docs)
+
+**Installation:**
+
+- Clone repo to your local machine.
+- Install project dependencies.
+
+```bash
+  pnpm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Create and copy your API key for [google gemini](https://makersuite.google.com/app/apikey)
+- Create a .env file in the project root and paste the following
+
+```bash
+  VITE_GEN_API_KEY=[YOUR_API_KEY]
+```
+
+- Run the project
+
+```bash
+  pnpm run dev
+```
+
+**Usage:**
+
+- Generating a poem involves completing the stepper form.
+- The Stepper form accepts deta based on your preference so as to allow the gemini model to generate personalised poem for every scenario.
+  ![themes and tones](image.png)
+  ![about](image-1.png)
+  ![styles](image-2.png)
+
+**Contributing:**
+
+If you'll like to drop a contribution, please specify [here](https://github.com/OlamideSimon/poemer/issues) or make a [pull request](https://github.com/OlamideSimon/poemer/pulls)
+
+**Author:**
+
+- [Olamide Simon](https://github.com/OlamideSimon)

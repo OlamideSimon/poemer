@@ -34,6 +34,14 @@ const StepperForm = () => {
 
   const resetStepper = () => {
     setCurrentStep(0)
+    setFormData({
+      occasion: '',
+      emotion: '',
+      theme: '',
+      about: '',
+      style: '',
+      length: '',
+    })
   }
 
   const onFormChange = (e: ChangeEvent<HTMLSelectElement | HTMLTextAreaElement>) => {

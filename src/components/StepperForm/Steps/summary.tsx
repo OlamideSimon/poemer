@@ -26,7 +26,7 @@ const Summary = ({ formData }: { formData: any }) => {
           <b>Theme:</b> {theme}
         </li>
         <li>
-          <b>About:</b> <span className="w-full overflow-hidden truncate">{about}</span>
+          <b>About:</b> <span className="w-60 overflow-hidden truncate">{about}</span>
         </li>
         <li>
           <b>Style:</b> {style}

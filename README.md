@@ -1,6 +1,6 @@
 **Poemer**
 
-Badge: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 **Description:**
 
